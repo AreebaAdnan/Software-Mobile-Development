@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF7F7"
+    tools:context=".Page4">
+
+
+    <ImageView
+        android:id="@+id/Toparrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/Verifyyourphonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/verify_your_phone_number"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Toparrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/darkgreen"
+
+
+        />
+
+    <TextView
+        android:id="@+id/wevesentacode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/we_ve_send_a_code_to_92_321_2242022"
+        app:layout_constraintTop_toBottomOf="@id/Verifyyourphonenumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/firstcircle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wevesentacode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hollowcirclepage4"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/seccircle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/firstcircle"
+        app:layout_constraintTop_toBottomOf="@id/wevesentacode"
+        app:srcCompat="@drawable/hollowcirclepage4"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/thirdcircle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/seccircle"
+        app:layout_constraintTop_toBottomOf="@id/wevesentacode"
+        app:srcCompat="@drawable/hollowcirclepage4"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/fourthcircle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/thirdcircle"
+        app:layout_constraintTop_toBottomOf="@id/wevesentacode"
+        app:srcCompat="@drawable/hollowcirclepage4"
+        android:contentDescription="@string/todo"/>
+
+    <ImageView
+        android:id="@+id/fifthcircle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toEndOf="@+id/fourthcircle"
+        app:layout_constraintTop_toBottomOf="@id/wevesentacode"
+        app:srcCompat="@drawable/hollowcirclepage4"
+        android:contentDescription="@string/todo"/>
+
+    <Button
+        android:id="@+id/verifybutton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstcircle" />
+
+    <TextView
+        android:id="@+id/sendcodeagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/send_code_again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifybutton"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="3dp"
+        android:text="@string/_00_30"
+        android:textStyle="bold"
+        android:textColor="@color/darkgreen"
+        app:layout_constraintStart_toEndOf="@+id/sendcodeagain"
+        app:layout_constraintTop_toBottomOf="@+id/verifybutton"/>
+
+
+    <View
+        android:id="@+id/viewTWO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#50C1C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifybutton" />
+
+    <ImageView
+        android:id="@+id/zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/zero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eight"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="1sp"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="@+id/two"
+        app:layout_constraintTop_toTopOf="@+id/two"
+        app:layout_constraintRight_toLeftOf="@+id/two"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewTWO"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/three"
+        app:layout_constraintLeft_toRightOf="@+id/two"
+        app:layout_constraintTop_toTopOf="@+id/viewTWO"
+        android:contentDescription="@string/todo"
+        />
+    <ImageView
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        app:srcCompat="@drawable/four"
+        app:layout_constraintRight_toLeftOf="@+id/five"
+        app:layout_constraintTop_toTopOf="@+id/five"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/five"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        android:contentDescription="@string/todo"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:srcCompat="@drawable/six"
+        app:layout_constraintStart_toEndOf="@+id/five"
+        app:layout_constraintTop_toTopOf="@+id/five"
+        android:contentDescription="@string/todo"
+        />
+    <ImageView
+        android:id="@+id/seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/eight"
+        app:layout_constraintTop_toTopOf="@+id/eight"
+        app:srcCompat="@drawable/seven"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/eight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five"
+        android:contentDescription="@string/todo"
+        />
+
+    <ImageView
+        android:id="@+id/nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toEndOf="@+id/eight"
+        app:layout_constraintTop_toTopOf="@+id/eight"
+        app:srcCompat="@drawable/nine"
+        android:contentDescription="@string/todo"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/cross"
+        app:layout_constraintTop_toTopOf="@+id/zero"
+        app:layout_constraintBottom_toBottomOf="@+id/zero"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        android:contentDescription="@string/todo"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

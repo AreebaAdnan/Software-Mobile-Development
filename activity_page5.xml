@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDF7F7"
+    tools:context=".Page5">
+
+    <ImageView
+        android:id="@+id/Toparrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:contentDescription="@string/todo"
+        />
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/forgot_password"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkgreen"
+        app:layout_constraintStart_toStartOf="@id/Toparrow"
+        app:layout_constraintTop_toTopOf="@id/Toparrow" />
+
+    <TextView
+        android:id="@+id/paragragh"
+        android:layout_width="363dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:autoSizeTextType="uniform"
+        android:text="@string/forgetpaswword"
+        android:textAppearance="@string/forgetpaswword"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/forgetpassword"
+        app:layout_constraintTop_toBottomOf="@+id/forgetpassword"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/paragragh"
+        app:layout_constraintStart_toStartOf="@+id/paragragh"
+        />
+
+    <EditText
+        android:id="@+id/emailinput"
+        android:layout_width="321dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/Email"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        android:autofillHints=""
+        />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/darkgreen"
+        android:text="@string/send"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/emailinput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/Rememberyourpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/remember_your_password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/login"
+        android:textColor="@color/darkgreen"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/Rememberyourpassword"
+        app:layout_constraintTop_toBottomOf="@id/send"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
